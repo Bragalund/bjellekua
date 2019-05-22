@@ -1,0 +1,6 @@
+---
+
+- hosts: ingeborg
+
+- import_playbook: Update_and_upgrade_ubuntu-playbook.yml
+- import_playbook: Java-OpenJDK-playbook.yml
