@@ -1,0 +1,7 @@
+---
+
+- hosts: ingeborg
+
+- import_playbook: partition-playbook.yml
+- import_playbook: format-playbook.yml
+- import_playbook: mount-playbook.yml

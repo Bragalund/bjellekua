@@ -1,0 +1,30 @@
+---
+
+- hosts: ingeborg
+
+# Make sure partition exist on disks
+
+  tasks:
+
+  - name: Create sda partition
+    become: yes
+    parted:
+      device: /dev/sda
+      number: 1
+      state: present
+
+  - name: Create sdb partition
+    become: yes
+    parted:
+      device: /dev/sdb
+      number: 1
+      state: present
+
+  - name: Create sdc partition
+    become: yes
+    parted:
+      device: /dev/sdc
+      number: 1
+      state: present
+
+

@@ -1,0 +1,19 @@
+# Mount them
+
+- mount:
+    fstype: ext2
+    src: /dev/sda1
+    path: /data
+    state: mounted
+
+- mount:
+    fstype: ext2
+    src: /dev/sdb1
+    path: /data
+    state: mounted
+
+- mount:
+    fstype: ext2
+    src: /dev/sdc1
+    path: /data
+    state: mounted

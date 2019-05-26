@@ -1,0 +1,19 @@
+---
+- hosts: ingeborg
+
+# Format the partitions
+  tasks:
+  - name: format sda1
+    filesystem:
+     fstype: ext2
+     dev: /dev/sda1
+
+  - name: format sdb1
+    filesystem:
+     fstype: ext2
+     dev: /dev/sdb1
+
+  - name: format sdc1
+    filesystem:
+      fstype: ext2
+      dev: /dev/sdc1
