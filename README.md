@@ -20,3 +20,11 @@ ansible --version;
 ... or just run the [installScript](installNewestAnsibleWithAptOnUbuntu18.04.sh).
 
 
+## Testing
+
+Tests are run using vagrant.
+
+### Install vagrant (and virtualbox) locally
+
+Just run this [shell-script](installVagrantWithAptOnUbuntu18.04.sh) or, if you have installed ansible on your machine, run this [playbook](playbooks/integration-test-plays/vagrant-play.yml).
+

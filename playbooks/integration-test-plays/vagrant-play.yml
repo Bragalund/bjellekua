@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+
+  tasks:
+
+  - name: install virtualbox
+    apt: pkg=virtualbox state=latest
+    sudo: true
+
+  - name: install vagrant
+    apt: pkg=vagrant state=latest
+    sudo: true
+
+      
