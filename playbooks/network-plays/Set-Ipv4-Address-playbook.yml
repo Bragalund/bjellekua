@@ -1,10 +1,10 @@
 ---
 - hosts: ingeborg
-  remote-user: root
   tasks:
   
     - name: Add an Ethernet connection with static IP configuration
-        mcli:
+      sudo: true
+      mcli:
         conn_name: my-eth1
         ifname: eth1
         type: ethernet

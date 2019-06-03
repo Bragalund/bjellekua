@@ -1,0 +1,5 @@
+---
+
+ - hosts: ingeborg
+
+ - import_playbook: Set-Ipv4-Address-playbook.yml
