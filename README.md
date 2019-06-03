@@ -28,3 +28,12 @@ Tests are run using vagrant.
 
 Just run this [shell-script](installVagrantWithAptOnUbuntu18.04.sh) or, if you have installed ansible on your machine, run this [playbook](playbooks/integration-test-plays/vagrant-play.yml).
 
+### To run vagrant
+
+From root directory.
+
+```()
+vagrant init;
+vagrant up;
+vagrant provision;
+```
