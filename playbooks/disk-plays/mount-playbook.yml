@@ -1,19 +1,25 @@
-# Mount them
+---
+- hosts: ingeborg
 
-- mount:
-    fstype: ext2
-    src: /dev/sda1
-    path: /data
-    state: mounted
+  tasks:
 
-- mount:
-    fstype: ext2
-    src: /dev/sdb1
-    path: /data
-    state: mounted
-
-- mount:
-    fstype: ext2
-    src: /dev/sdc1
-    path: /data
-    state: mounted
+    - name: mount first harddrive
+      mount:
+        fstype: ext2
+        src: /dev/sda1
+        path: /data
+        state: mounted
+    
+    - name: mount second harddrive
+      mount:
+        fstype: ext2
+        src: /dev/sdb1
+        path: /data
+        state: mounted
+    
+    - name: mount third harddrive
+      mount:
+        fstype: ext2
+        src: /dev/sdc1
+        path: /data
+        state: mounted

@@ -5,3 +5,4 @@
 - import_playbook: Update_and_upgrade_ubuntu-playbook.yml
 - import_playbook: Java-OpenJDK-playbook.yml
 - import_playbook: Plex-Media-Server-playbook.yml
+- import_playbook: Gitlab-playbook.yml

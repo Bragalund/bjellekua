@@ -1,9 +1,10 @@
 ---
 - hosts: ingeborg
+  
   tasks:
   
     - name: Add an Ethernet connection with static IP configuration
-      sudo: true
+      become: true
       mcli:
         conn_name: ingeborg-eth1
         ifname: eth1
