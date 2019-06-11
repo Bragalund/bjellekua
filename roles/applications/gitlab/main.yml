@@ -1,0 +1,4 @@
+---
+- hosts:
+
+- import_playbook: Gitlab-playbook.yml

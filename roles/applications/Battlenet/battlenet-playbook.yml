@@ -1,0 +1,27 @@
+---
+- hosts: all
+
+# Denne er ikke ferdig...
+# Les mer her: https://askubuntu.com/questions/846651/installing-starcraft-2-playonlinux#881411
+
+  tasks:  
+
+  - name: Enable x86 architecture
+    command: sudo dpkg --add-architecture i386
+
+  - name: add wine-staging repo to apt
+    sudo: true
+    apt_repository:
+      repo: ppa:wine/wine-builds
+      update_cache: yes
+
+  - name: install wine with apt and make sure they are present
+    sudo: true
+    apt: name={{item}} state=installed
+    with_items:
+      - winehq-staging
+      - winetricks
+      - winbind
+    
+  - name: install some c++ libraries with winetricks
+    command: winetricks corefonts vcrun2005 vcrun2008 vcrun2015

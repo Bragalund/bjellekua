@@ -1,0 +1,4 @@
+---
+- hosts: ingeborg
+
+- import_playbook: Install-Plex-Media-Server-playbook.yml

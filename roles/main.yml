@@ -1,0 +1,8 @@
+---
+  
+  - hosts: ingeborg
+
+  - import_playbook: maintenance/main.yml
+    #  - import_playbook: disk-plays/main.yml
+  - import_playbook: network/main.yml
+  - import_playbook: applications/main.yml

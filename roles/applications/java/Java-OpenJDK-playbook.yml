@@ -7,5 +7,3 @@
     apt:
       name: 'openjdk-8-jdk'
       state: present
-    with_items:
-     openjdk-8-jdk

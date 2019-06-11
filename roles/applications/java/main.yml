@@ -1,0 +1,4 @@
+---
+- hosts: ingeborg
+
+- import_playbook: Java-OpenJDK-playbook.yml

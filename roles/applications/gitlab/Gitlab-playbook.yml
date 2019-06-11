@@ -1,0 +1,8 @@
+---
+- hosts: ingeborg
+  
+  vars_files:
+    - vars/gitlab-vars.yml
+
+  roles:
+    - { role: geerlingguy.gitlab }

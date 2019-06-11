@@ -1,0 +1,7 @@
+---
+
+- hosts: ingeborg
+
+- import_playbook: java/main.yml
+- import_playbook: plex/main.yml
+- import_playbook: gitlab/main.yml
