@@ -1,4 +1,5 @@
 ---
 - hosts:
 
-- import_playbook: Gitlab-playbook.yml
+# Not working yet...
+# - import_playbook: Gitlab-playbook.yml

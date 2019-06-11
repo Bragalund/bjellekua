@@ -3,14 +3,23 @@
 
   tasks:
 
+    - name: Check if plex is running
+      command: systemctl status plexmediaserver
+      ignore_errors: yes
+      changed_when: false
+      register: service_plexmediaserver_status
+
     - name: Download plex deb
       get_url:
         url: https://downloads.plex.tv/plex-media-server-new/1.15.6.1079-78232c603/debian/plexmediaserver_1.15.6.1079-78232c603_amd64.deb 
         dest: /tmp/plex.deb
+      when: service_plexmediaserver_status | failed
 
     - name: Install plex
       apt: deb=/tmp/plex.deb
       sudo: yes
 
     - name: Make sure that plex is started
-      service: name=plexmediaserver state=started
+      service: 
+        name: plexmediaserver 
+        state: started
