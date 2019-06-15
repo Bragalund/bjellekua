@@ -1,0 +1,5 @@
+- import_tasks: install-required-packages.yml
+- import_tasks: start-required-services.yml
+- import_tasks: set-ipv4-address.yml
+
+

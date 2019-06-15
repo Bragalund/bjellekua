@@ -1,0 +1,5 @@
+  - name: Install required packages for using the nmcli-module
+    apt: 
+      name: ['network-manager', 'python-dbus', 'libnm-glib-dev']
+      state: present
+    sudo: true

@@ -1,0 +1,5 @@
+- name: upgrade ubuntu 
+  sudo: true
+  apt:
+    name: "*"
+    state: latest

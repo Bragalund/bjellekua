@@ -1,0 +1,5 @@
+- name: install required modules for using apt-module
+  apt: 
+    name: ['python-apt', 'python3-apt', 'aptitude']
+    state: present
+  sudo: true

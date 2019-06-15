@@ -1,0 +1,7 @@
+- name: start network manager as service
+  sudo: true
+  service:
+    name: network-manager
+    enabled: yes
+    state: started
+

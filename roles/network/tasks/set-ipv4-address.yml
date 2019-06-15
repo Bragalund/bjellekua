@@ -1,0 +1,9 @@
+- name: Add an Ethernet connection with static IP configuration
+  nmcli:
+    conn_name: ingeborg-eth1
+    ifname: eth1
+    type: ethernet
+    ip4: 192.168.1.251
+    gw4: 192.168.1.1
+    state: present
+  sudo: true
