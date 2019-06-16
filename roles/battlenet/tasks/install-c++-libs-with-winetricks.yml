@@ -1,0 +1,2 @@
+  - name: install c++ libraries with winetricks
+    command: winetricks corefonts vcrun2005 vcrun2008 vcrun2015

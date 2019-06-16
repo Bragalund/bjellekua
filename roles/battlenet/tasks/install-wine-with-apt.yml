@@ -1,0 +1,6 @@
+  - name: install wine with apt and make sure they are present
+    become: yes
+    apt:
+      name: ['winehq-staging', 'winetricks', 'winbind']
+      state: present
+    

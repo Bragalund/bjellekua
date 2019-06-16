@@ -1,0 +1,4 @@
+- import_tasks: enable-x86-architecture.yml
+- import_tasks: add-wine-to-apt-repo.yml
+- import_tasks: install-wine-with-apt.yml
+- import_tasks: install-c++-libs-with-winetricks.yml

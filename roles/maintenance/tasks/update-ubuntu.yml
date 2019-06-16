@@ -1,4 +1,6 @@
 - name: update ubuntu 
   sudo: true
   apt:
+    allow_unauthenticated: yes
     update_cache: yes
+    autoremove: yes

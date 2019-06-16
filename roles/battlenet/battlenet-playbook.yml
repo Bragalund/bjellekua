@@ -6,14 +6,9 @@
 
   tasks:  
 
-  - name: Enable x86 architecture
-    command: sudo dpkg --add-architecture i386
 
-  - name: add wine-staging repo to apt
-    sudo: true
-    apt_repository:
-      repo: ppa:wine/wine-builds
-      update_cache: yes
+
+
 
   - name: install wine with apt and make sure they are present
     sudo: true

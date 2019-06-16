@@ -1,0 +1,7 @@
+  - name: add wine-staging repo to apt
+    become: yes
+    apt_repository:
+      repo: ppa:wine/wine-builds
+      validate_certs: no
+      update_cache: yes
+      autoclean: yes

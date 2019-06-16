@@ -1,5 +1,6 @@
   - name: Install required packages for using the nmcli-module
+    become: yes
     apt: 
       name: ['network-manager', 'python-dbus', 'libnm-glib-dev']
       state: present
-    sudo: true
+      update_cache: yes
